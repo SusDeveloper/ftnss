@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Navbar */
+nav {
+  background: none; /* dark navy */
+  width: 100%;
+  position: fixed;
+  padding: 10px 0;
+  z-index: 12;
+}
+
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* 🔹 Logo */
+.menu .logo a {
+  text-decoration: none;
+  color: #00E0FF; /* bright cyan accent */
+  font-size: 35px;
+  font-weight: 600;
+}
+/* 🔹 Navigation Links */
+.menu ul {
+  display: inline-flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 7px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #F5F7FA; /* light text */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: blue background + white text */
+.menu ul li a:hover {
+  background: #007AFF; /* electric blue */
+  color: #FFFFFF;
+}
+
+/* 🔹 Hero Section Background */
+.img {
+  background: url(background_img1.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* dark overlay for readability */
+.img::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(10, 10, 35, 0.6); /* dark navy overlay */
+}
+
+/* 🔹 Centered Text */
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Title and Subtitle */
+.center .title {
+  color: #00E0FF; /* cyan title */
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.center .subtitle {
+  color: #F5F7FA; /* light gray/white */
+  font-size: 52px;
+  font-weight: 600;
+}
+
+/* 🔹 Buttons */
+.center .btns {
+  margin-top: 20px;
+}
+
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: 2px solid #007AFF; /* electric blue border */
+  background: none;
+  color: #F5F7FA;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* primary button hover */
+.center .btns button:first-child:hover {
+  background: #007AFF; /* electric blue */
+  color: #FFFFFF;
+}
+
+/* secondary button (if any) */
+.center .btns button:last-child {
+  background: #007AFF;
+  border: none;
+  color: #FFFFFF;
+}
+
+.center .btns button:last-child:hover {
+  background: #00E0FF; /* cyan hover */
+}

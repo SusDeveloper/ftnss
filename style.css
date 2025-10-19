@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🔹 Navbar */
+nav {
+  background: none; /* dark navy */
+  width: 100%;
+  position: fixed;
+  padding: 10px 0;
+  z-index: 12;
+}
+
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* 🔹 Logo */
+.menu .logo a {
+  text-decoration: none;
+  color: #00E0FF; /* bright cyan accent */
+  font-size: 35px;
+  font-weight: 600;
+}
+/* 🔹 Navigation Links */
+.menu ul {
+  display: inline-flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 7px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #F5F7FA; /* light text */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: blue background + white text */
+.menu ul li a:hover {
+  background: #007AFF; /* electric blue */
+  color: #FFFFFF;
+}
+
+/* 🔹 Hero Section Background */
+.img {
+  background: url(background_img1.jpg) no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* dark overlay for readability */
+.img::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(10, 10, 35, 0.6); /* dark navy overlay */
+}
+
+/* 🔹 Centered Text */
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Title and Subtitle */
+.center .title {
+  color: #00E0FF; /* cyan title */
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.center .subtitle {
+  color: #F5F7FA; /* light gray/white */
+  font-size: 52px;
+  font-weight: 600;
+}
+
+/* 🔹 Buttons */
+.center .btns {
+  margin-top: 20px;
+}
+
+.center .btns .btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 170px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 5px;
+  border: 2px solid #007AFF; /* Electric blue */
+  background: none;
+  color: #F5F7FA; /* Light text */
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+/* Remove default link colors in all states */
+.center .btns .btn:link,
+.center .btns .btn:visited,
+.center .btns .btn:active {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+
+/* Primary button (Login) */
+.center .btns .btn:first-child:hover {
+  background: #007AFF;
+  color: #FFFFFF;
+}
+
+/* Secondary button (Join Us) */
+.center .btns .btn:last-child {
+  background: #007AFF;
+  border: none;
+  color: #FFFFFF;
+}
+
+.center .btns .btn:last-child:hover {
+  background: #00E0FF; /* Cyan hover */
+  color: #FFFFFF;
+}
+
